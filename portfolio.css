@@ -8,7 +8,7 @@
   } 
 
   body{
-    background-image: url('./bilder/Other/wood.png');
+    background-image: url('.other/wood.png');
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
