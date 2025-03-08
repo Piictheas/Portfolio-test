@@ -113,7 +113,7 @@ h2{
 .arrow {
   width: 3rem;
   margin: 0;
-  background-image: url('bilder/Other/arrow\ right.png');
+  background-image: url('/Other/arrow\ right.png');
   background-size: contain;
   background-repeat: no-repeat;
 
@@ -173,7 +173,7 @@ h2{
 }
 
 .sidenav-arrow-toggle:checked ~ .sidenav-arrow-toggle-label .arrow {
-  background-image: url('bilder/Other/arrow\ left.png');
+  background-image: url('/Other/arrow\ left.png');
 }
 
 .sidenav-arrow-toggle{

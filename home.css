@@ -47,7 +47,7 @@ body{
         }
     } */
     body{
-        background-image: url('.killing\ look.jpg');
+        background-image: url('./Illustrations/night\ sky.jpg');
         background-position: center 0%;
         background-size: cover;
         min-height: 100vh;
