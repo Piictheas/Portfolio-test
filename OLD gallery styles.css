@@ -1,0 +1,167 @@
+.main {
+    margin-left: 14rem; 
+    padding: 0px 14px;
+  }
+
+* {
+    box-sizing: border-box;
+  } 
+
+  body{
+    background-image: url('./bilder/Other/wood.png');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    position: relative;
+    z-index: 2;
+  }
+
+
+
+  .box img {
+  max-width: 100%;
+  height: 100%;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.box-long img {
+  max-width: 100%;
+  height: 100%;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.box-long-long img {
+  max-width: 100%;
+  height: 100%;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.image1{
+    align-self: center;
+}
+
+.image2{
+    align-self: center;
+}
+
+.image3{
+  align-self: center;
+}
+
+.image4{
+  align-self: center;
+}
+
+.span-2 {
+  grid-column: span 2;
+}
+
+
+.box {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(180px, 1fr));
+    grid-gap: 2rem;
+    margin: 2rem 8rem 2rem 8rem;
+    position: relative;
+  }
+
+  .box-long {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(180px, 1fr));
+    grid-gap: 2rem;
+    margin: 2rem 8rem 2rem 8rem;
+    position: relative;
+  }
+
+  .box-long-long {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(180px, 1fr));
+    grid-gap: 2rem;
+    margin: 2rem 8rem 2rem 8rem;
+    position: relative;
+  }
+
+  img:hover{
+    transform: scale(1.01);
+    transition: 0.8s;
+}
+
+    /*small screen*/
+@media screen and (max-width: 1080px) {
+    .box{
+      grid-template-columns: repeat(2, 1fr);
+      align-self: center;
+      margin: 2rem 6rem 2rem 6rem;
+    }
+
+    .box-long{
+      grid-template-columns: repeat(2, 1fr);
+      align-self: center;
+      margin: 2rem 6rem 2rem 6rem;
+    }
+
+    .box-long-long{
+      grid-template-columns: repeat(1, 1fr);
+      align-self: center;
+      margin: 2rem 6rem 2rem 6rem;
+    }
+
+     .span-2 {
+      grid-column: span 1;
+    }
+
+    .image2{
+      grid-column-start: 1;
+      grid-column-end: 1;
+    }
+
+    .image4{
+      grid-column-start: 3;
+      grid-column-end: 3;
+    }
+
+    .image3{
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+}
+
+/*small small screen*/
+@media screen and (max-width: 1000px) {
+  .box{
+    grid-template-columns: 100%;
+    margin: 1rem 4rem 1rem 4rem;
+    grid-gap: 1rem;
+  }
+
+  .box-long{
+    margin: 1rem 4rem 1rem 4rem;
+    grid-gap: 1rem;
+  }
+
+  .box-long-long{
+    margin: 1rem 4rem 1rem 4rem;
+    grid-gap: 1rem;
+  }
+
+  .image3{
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+
+
+  img:hover{
+    transform: none
+}
+}
+
+/*large screen*/
+/* @media screen and (min-width: 1000px){
+  .box{
+    grid-template-columns: repeat(4, 1fr);
+  }
+} */

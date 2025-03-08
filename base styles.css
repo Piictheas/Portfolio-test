@@ -1,0 +1,292 @@
+main {
+  margin-left: 14rem; 
+  
+  /* padding: 2rem 2rem; */
+}
+
+:root{
+  font-family: 'Bokor', system-ui;
+  /* --text-primary: #180803;
+  --text-secondary: #e28000;
+  --bg-primary:  #180803;
+  --bg-secondary: #e28000; */
+}
+
+body {
+  background-color: #29140e;
+  /* margin: 0;
+  padding: 0; */
+}
+
+body ::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body ::-webkit-scrollbar-track{
+  background: #29140e;
+}
+
+body ::-webkit-scrollbar-thumb{
+  background: #e28000;
+}
+
+
+img {
+  width: 100%;
+  /* height: auto; */
+}
+
+.sidenav {
+  position: fixed;
+  z-index: 1;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #e28000;
+  overflow: hidden;
+  padding: 0rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  /* cursor: pointer; */
+}
+
+.sidenav ul {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  flex-grow: 1; /* Allow the ul to grow and take up available space */
+  justify-content: center; /* Center items vertically */
+}
+
+.sidenav ul li {
+  margin: 1.2rem 0; /* Add spacing between list items */
+  padding: 0;
+}
+
+
+
+.sidenav a{
+  font-family: 'Bokor', system-ui;
+  font-style: none;
+  font-size: 24px;
+  color: #180803;
+  padding: 0rem 1rem 0rem 1rem;
+  text-decoration: none;
+}
+
+.sidenav a:hover {
+  color: #97350f;
+}
+
+
+
+
+h1{
+  font-family: 'Bokor', system-ui;
+  font-size: 50px;
+  letter-spacing: 10px;
+  color: #ff8303;
+  text-align: center;
+  padding: 3rem 0rem 0rem 0rem;
+}
+
+.divider {
+  width: 400px;
+  margin: 0 auto; /* Center the divider */
+  text-align: center;
+  padding: 0rem 0rem 2rem 0rem; /* Adjust padding as needed */
+}
+
+h2{
+  font-family: 'Bokor', system-ui;
+  font-size: 20px;
+  color: #ff8303;
+  text-align: center;
+  padding: 1rem 1rem 2rem 1rem;
+  position: relative;
+}
+
+.arrow {
+  width: 3rem;
+  margin: 0;
+  background-image: url('bilder/Other/arrow\ right.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+
+.sidenav-arrow {
+  width: 9rem;
+  position: fixed;
+  z-index: 2;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #ff8303;
+  overflow-x: hidden;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensure space between items */
+  transform: scale(1,0);
+}
+
+.sidenav-arrow ul {
+  display: flex;
+  flex-direction: column;
+  text-align: left; 
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  flex-grow: 1; /* Allow the ul to grow and take up available space */
+  justify-content: center; /* Center items vertically */
+}
+
+.sidenav-arrow ul li {
+  margin: 1rem 0; /* Add spacing between list items */
+}
+
+.sidenav-arrow a {
+  font-family: 'Bokor', system-ui;
+  font-size: 24px;
+  color: #180803;
+  text-decoration: none;
+}
+
+.sidenav-arrow a:hover {
+  color: #97350f;
+}
+
+.sidenav-arrow-toggle:checked ~ .sidenav-arrow{
+  transform: scale(1,1);
+}
+
+.sidenav-arrow-toggle:checked ~ .sidenav-arrow .sidenav-arrow-logo{
+  opacity: 1;
+}
+.sidenav-arrow-toggle:checked ~ .sidenav-arrow a{
+  opacity: 1;
+}
+
+.sidenav-arrow-toggle:checked ~ .sidenav-arrow-toggle-label .arrow {
+  background-image: url('bilder/Other/arrow\ left.png');
+}
+
+.sidenav-arrow-toggle{
+  display: none;
+}
+
+.sidenav-arrow-toggle-label{
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-left: 0.7em;
+  margin-top: 2rem;
+  height: 100%;
+  z-index: 99;
+  display: flex;
+}
+
+
+.socials-footer{
+  display: flex;
+  justify-content: center;
+  max-width: 750px;
+  margin: 0 auto;
+  padding-left: 1.5rem;
+}
+
+.socials-footer a{
+  color: #ff8303; 
+  font-size: 30px;
+  letter-spacing: 20px;
+}
+
+.socials-footer a:hover{
+  color: #97350f;
+}
+
+
+.socials {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0;
+  margin-bottom: 0.6rem;
+}
+
+
+.socials a{
+  color: #380d00;
+  font-size: 25px;
+  letter-spacing: 0.5rem;
+}
+
+.socials a:hover{
+  color: #97350f;
+}
+
+
+/* mid screen */
+@media screen and (max-width: 1080px) {
+  h1{
+    font-size: 50px;
+    letter-spacing: 4px;
+  }
+
+  .divider {
+    width: 300px;
+  }
+
+}
+
+/*small screen*/
+@media screen and (max-width: 820px) {
+    .sidenav {
+      display: none;}
+      
+    .header {
+      /* font-size: 20px; */
+      position: relative;
+    }
+
+    main {
+      margin-left: 0;
+    }
+
+    h1{
+      font-size: 40px;
+      letter-spacing: 4px;
+    }
+
+    .divider {
+      width: 300px;
+    }
+
+  }
+
+
+
+/*large screen*/
+@media screen and (min-width: 820px){
+  .arrow{
+    display: none;
+  }
+  .sidenav-arrow{
+    display: none;
+  }
+  .sidenav-arrow-toggle-label{
+    display: none;
+  }
+}
+
+
+
+
+  /* font-family: 'Bokor', system-ui;
+  font-family: 'Gideon Roman', serif; */
+
+

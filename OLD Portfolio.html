@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="base styles.css">
+    <link rel="stylesheet" href="gallery styles.css">
+    <link rel="stylesheet" href="viewgallery.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bokor&family=Gideon+Roman&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6dbbc02be1.js" crossorigin="anonymous"></script>
+    <title>Portfolio</title>
+</head>
+<body>
+    
+    <nav class="sidenav">       
+        <ul>
+            <li><a href="home page.html">Home</a></li>
+            <li><a href="Portfolio.html">Portfolio</a></li>
+            <li><a href="comics.html">Comics & Books</a></li>
+            <li><a href="Sketches.html">Sketchbook</a></li>
+            <li><a href="About.html">About & Contact</a></li>
+        </ul>
+        <div class="socials">
+            <a href="https://cara.app/pictheas" target="_blank"> <i class="fa-solid fa-c"></i></a>
+            <a href="https://bsky.app/profile/pictheas.bsky.social" target="_blank"> <i class="fa-brands fa-square-bluesky"></i></a>
+            <a href="https://www.instagram.com/pictheas/" target="_blank"> <i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </nav>
+     
+    <nav>
+        <input type="checkbox" id="sidenav-arrow-toggle" class="sidenav-arrow-toggle">
+        <label for="sidenav-arrow-toggle" class="sidenav-arrow-toggle-label">
+            <span class="arrow"></span>
+        </label>
+        <div class="sidenav-arrow">
+            <ul>
+                <li><a href="home page.html">Home</a></li>
+                <li><a href="Portfolio.html">Portfolio</a></li>
+                <li><a href="comics.html">Comics & Books</a></li>
+                <li><a href="Sketches.html">Sketchbook</a></li>
+                <li><a href="About.html">About & Contact</a></li>
+            </ul>
+            <div class="socials">
+                <a href="https://cara.app/pictheas" target="_blank"> <i class="fa-solid fa-c"></i></a>
+                <a href="https://bsky.app/profile/pictheas.bsky.social" target="_blank"> <i class="fa-brands fa-square-bluesky"></i></a>
+                <a href="https://www.instagram.com/pictheas/" target="_blank"> <i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <main>  
+        <h1>ILLUSTRATIONS</h1>
+        <div class="divider"><img src="bilder/Other/break.png" alt=""></div>
+            <div class="box-long-long">
+        
+                <img src="bilder/Illustrations/fools encounter2.jpg" class="image1" onclick="openLightbox(this)"/>
+                
+            </div>
+
+            <div class="box-long">            
+                <img src="bilder/Illustrations/Killing look.jpg" class="image1" onclick="openLightbox(this)"/>
+                <img src="bilder/Illustrations/child fantasy copy.jpg" class="image1" onclick="openLightbox(this)"/>
+            </div>
+
+            <div class="box">
+                <img src="bilder/Illustrations/unicorn trail-protected-intensity-LOW-V2.png" class="image1" onclick="openLightbox(this)"/>
+                <img src="bilder/Illustrations/night sky.jpg" class="image1 span-2" onclick="openLightbox(this)"/>
+            </div>
+
+            <div class="box-long">
+                <img src="bilder/Illustrations/donkey unicorn-glazed-intensity-10-V1.jpg" class="image1" onclick="openLightbox(this)"/> 
+                <img src="bilder/Illustrations/Tinka-protected-intensity-LOW-V2.jpg" class="image1" onclick="openLightbox(this)"/>
+            </div>
+
+            
+
+
+        <h1>CHARACTERS</h1>
+        <div class="divider"><img src="bilder/Other/break.png" alt=""></div>
+
+            <div class="box-long-long">
+                <img src="bilder/Illustrations/Zeus redesign.jpg" class="image3" onclick="openLightbox(this)"/> 
+            </div>
+
+            <div class="box-long">
+                <img src="bilder/Illustrations/titan redesign-protected-intensity-LOW-V2.png.jpg" class="image1" onclick="openLightbox(this)"/>
+                <img src="bilder/Illustrations/sorex-protected-intensity-LOW-V2.jpg" class="image1" onclick="openLightbox(this)"/>
+            </div>
+
+            <div class="box-long">
+                <img src="bilder/Illustrations/sorex group 1-protected-intensity-LOW-V2.jpg" class="image1" onclick="openLightbox(this)"/>
+                <img src="bilder/Illustrations/sorex group 2-protected-intensity-LOW-V2.jpg" class="image1" onclick="openLightbox(this)"/>
+            </div>
+
+            <div class="divider"><img src="bilder/Other/break.png" alt=""></div>
+
+
+        <footer>
+            <div class="container">
+                <div class="socials-footer">
+                    <a href="https://cara.app/pictheas" target="_blank"> <i class="fa-solid fa-c"></i></a>
+                    <a href="https://bsky.app/profile/pictheas.bsky.social" target="_blank"> <i class="fa-brands fa-square-bluesky"></i></a>
+                    <a href="https://www.instagram.com/pictheas/" target="_blank"> <i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <h2> © 2025 Scott Bodin</h2>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+        <a class="next" onclick="changeImage(1)">&#10095;</a>
+    </div>
+
+    <script src="viewgallery.js"></script>
+</body>
+</html>

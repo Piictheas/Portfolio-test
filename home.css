@@ -1,0 +1,194 @@
+/* 
+<div class="container">
+            <div class="outer">
+                <div class="details">
+                    <h1>Wehooo</h1>
+                </div>
+            </div>
+
+       </div>
+body{
+    margin: 0;
+    padding: 0;
+    }
+
+    .container{
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: ;
+        animation: animate 16s ease-in-out infinite;
+        background-size: cover;
+    }
+
+    .outer{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        
+    }
+
+    @keyframes animate {
+        0%, 100%{
+            background-image: url('./bilder/fools_encounter.jpg');
+        }
+        25%{
+            background-image: url('./bilder/Zeus\ redesign.jpg');
+        }
+        50%{
+            background-image: url('./bilder/moonlit.jpg');
+        }
+        75%{
+            background-image: url('./bilder/Jasper\ jpeg.jpg');
+        }
+    } */
+    body{
+        background-image: url('./bilder/Illustrations/night\ sky.jpg');
+        background-position: center 0%;
+        background-size: cover;
+        min-height: 100vh;
+        position: relative;
+        z-index: 5;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        }
+    
+      .wrapper {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        }
+
+    main {
+      flex: 1;
+      }
+  
+    footer {
+      background-color: rgba(32, 11, 5, 0.5); /* Adjust the alpha value (0.8) as needed */
+      /* color: #e28000; */
+      text-align: center;
+      padding: 1rem;
+      }
+
+      h1{
+        font-family: 'Bokor', system-ui;
+        font-size: 900%;
+        letter-spacing: 10px;
+        color: #ff8303;
+        text-align: center;
+        padding: 13rem 1rem 0rem 1rem; 
+      }
+
+      h2{
+        font-family: 'Bokor', system-ui;
+        font-size: 200%;
+        /* letter-spacing: 5px; */
+        color: #ff8303;
+        text-align: center;
+        padding: 0rem 1rem 5rem 1rem;
+        position: relative;
+      }
+
+
+      .mainnav ul{
+        text-align: center;
+   }
+
+      .mainnav a{
+        font-family: 'Bokor', system-ui;
+        font-style: none;
+        font-size: 24px;
+        color: #ff8303;
+        text-decoration: none;
+        background-color: rgba(32, 11, 5, 0.8);
+        margin: 1rem 0.5rem;
+
+      }
+
+      .mainnav a:hover {
+        color:#97350f;
+      }
+
+      
+      h3{
+        font-family: 'Bokor', system-ui;
+        font-size: 20px;
+        color: #ff8303;
+        text-align: center;
+        padding: 1rem 1rem 2rem 1rem;
+        position: relative;
+      }
+      
+      .socials-footer{
+        display: flex;
+        justify-content: center;
+        max-width: 750px;
+        margin: 0 auto;
+        padding-left: 1.5rem;
+      }
+      
+      .socials-footer a{
+        color: #ff8303;
+        font-size: 30px;
+        letter-spacing: 20px;
+      }
+      
+      .socials-footer a:hover{
+        color: #97350f;
+      }
+      
+
+      /*small small screen*/
+@media screen and (max-width: 900px) {
+    h1{
+      font-size: 500%;
+      padding: 9rem 2rem 1rem 2rem;
+    }
+
+    h2{
+      font-size: 170%;
+    }
+
+    .mainnav {
+      display: flex;
+      justify-content: center;
+      position: relative;
+    }
+
+
+    .mainnav ul{
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    .mainnav a{
+      font-size: 150%;
+      margin: 0.5rem 0; /* Spacing between items */
+      text-align: center;
+    }
+
+  .mainnav a:active {
+        color:#97350f;
+      }
+
+  }
+  
+/* big big screen */
+  @media screen and (min-height: 1200px) {
+    h1{
+      font-size: 1000%;
+     padding: 20rem 2rem 1rem 2rem;
+    }
+
+  }

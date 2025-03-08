@@ -1,0 +1,344 @@
+
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    padding: 0rem;
+    background-color: rgba(32, 11, 5, 0.0); /* Adjust the alpha value (0.8) as needed */
+  }
+  
+  footer h2 {
+    margin-left: 14rem;
+    /* margin-top: 0rem;
+    margin-bottom: 0rem; */
+  }
+  
+  body{
+    background-image: url('./bilder/Other/wood.png');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    position: relative;
+    z-index: 2;
+  }
+  
+.box{
+    margin: 4rem 0rem 5rem 0rem; 
+    padding: 0;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+
+/* :root{
+    --main-raduis: 5px;
+    --main-padding: 5px;
+} */
+
+* {
+    box-sizing: border-box;
+  } 
+
+.img {
+    max-width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    display: inline-block;
+  }
+
+
+    h2{
+        font-size: 35px;
+        text-align: center;
+        color: #ff8303;
+    }
+
+    h3{
+        font-size: 25px;
+        text-align: center;
+        color: #b4660c;
+        background-color: rgba(252, 180, 113, 0.8);
+        padding: 1rem;
+    }
+
+    p{
+        font-family: 'Gideon Roman', serif;
+        font-size: 20px;
+        text-align: center;
+        color: #2e1500;
+        background-color: rgba(252, 180, 113, 0.8);
+        padding: 1rem;
+    }
+
+.gallery{
+    display: grid;
+    /* height: 100vh; */
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-rows: 0rem 17rem 53.5rem 31rem 5rem; */
+    grid-template-areas: 
+        "content1 content1 content2 content2"
+        "content3 content3 content4 content4"
+        "content5 content5 content5 content5"
+        "content6 content6 content6 content6"
+        "content7 content7 content8 content8"
+        "content9 content9 content9 content9"
+        "content10 content10 content11 content11";  
+    grid-gap: 3rem;
+}
+
+.gallery2{
+    display: grid;
+    /* height: 100vh; */
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-rows: 0rem 17rem 53.5rem 31rem 5rem; */
+    grid-template-areas: 
+        "content1 content1 content2 content2"
+        "content3 content3 content3 content3"
+        "content4 content4 content5 content5"
+        "content6 content6 content6 content6"
+        "content7 content7 content8 content8"
+        "content9 content9 content9 content9"
+        "content10 content10 content11 content11";  
+    grid-gap: 4rem;
+}
+
+
+#content1{
+    background: rgb(56, 25, 4);
+    grid-area: content1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+    .image1 {
+        position: relative;
+        align-self: auto;
+        max-height: 300px;
+        /*max-width: fit-content;*/
+    }
+#content2{
+    background: rgb(56, 25, 4);
+    grid-area: content2;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+    .h2-1{
+        text-align: auto center;
+    }
+
+
+
+#content3{
+    background: rgb(56, 25, 4);
+    grid-area: content3;
+    padding-top: 25%;
+}
+#content4{
+    background: rgb(56, 25, 4);
+    grid-area: content4;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+    .image4 {
+        align-self: center;
+        max-height: 100%;
+        /*max-width: fit-content;*/
+    }
+
+
+
+
+
+#content5{
+    background: rgb(56, 25, 4);
+    grid-area: content5;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+    .image5 {
+        align-self: center;
+        max-height: 100%;
+        
+    }
+
+
+
+
+#content6{
+    background: rgb(56, 25, 4);
+    grid-area: content6;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+    /* .image6 {
+        align-self: center;
+        max-height: 50px;
+        padding: 0% 0.6% 0% 0%;
+    } */
+
+
+
+
+#content7{
+    background: rgb(56, 25, 4);
+    grid-area: content7;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+    
+#content8{
+    background: rgb(56, 25, 4);
+    grid-area: content8;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+    .image8 {
+        /* position: relative; */
+        align-self: auto;
+        max-height: 900px;
+        /*max-width: fit-content;*/
+    }
+
+
+#content9{
+    background: rgb(56, 25, 4);
+    grid-area: content9;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+    .image9 {
+        align-self: center;
+        max-height: 500px;
+        margin-right: 1rem;
+        /* padding: 0% 0.6% 0% 0%; */
+    }   
+    
+    /* .image9 {
+        align-self: center;
+        max-height: 50px;
+       max-width: fit-content;
+        padding: 0% 0.6% 0% 0%;
+    } */
+
+
+
+#content10{
+    background: rgb(56, 25, 4);
+    grid-area: content9;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+    .image10 {
+        align-self: center;
+        max-height: 50px;
+       /*max-width: fit-content;*/
+        padding: 0% 0.6% 0% 0%;
+    }
+
+#content11{
+    background: rgb(56, 25, 4);
+    grid-area: content11;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.all-content{
+    overflow: hidden;
+}
+
+
+/* .grid-box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    grid-template-areas:
+      "image1 image1 image1 image1"
+      "text text text text";
+  } */
+
+
+
+  @media screen and (max-width: 1200px) {
+    .gallery{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "content1 content2"
+        "content3 content4"
+        "content5 content5"
+        "content6 content6"
+        "content7 content8"
+        "content9 content9"
+        "content10 content11";
+    }
+
+}
+
+
+@media screen and (max-width: 700px) {
+    .gallery{   
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:  
+        "content1 content2"
+        "content3 content3"
+        "content4 content4"
+        "content5 content5"
+        "content6 content6"
+        "content7 content8"
+        "content9 content9"
+        "content10 content11";
+    }
+
+    .gallery2{   
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:  
+            "content1" "content2"
+            "content3"
+            "content4"
+            "content5"
+            "content6"
+            "content7"
+            "content8"
+            "content9"
+            "content10"
+            "content11";
+    }
+
+    main {
+        margin-left: 0;
+        margin-right: 4rem;
+    }
+
+    #sidebar{
+        display: none;
+    } 
+
+}
+
