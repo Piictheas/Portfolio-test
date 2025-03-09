@@ -8,7 +8,7 @@
   } 
 
   body{
-    background-image: url('./Other/wood.png');
+    background-image: url('./Other/wood.jpg');
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -86,19 +86,19 @@
     .box{
       grid-template-columns: repeat(2, 1fr);
       align-self: center;
-      margin: 1rem 4rem 1rem 3rem;
+      margin: 1rem 3rem 1rem 2rem;
     }
 
     .box-long{
       grid-template-columns: repeat(2, 1fr);
       align-self: center;
-      margin: 1rem 4rem 1rem 3rem;
+      margin: 1rem 3rem 1rem 2rem;
     }
 
     .box-long-long{
       grid-template-columns: repeat(1, 1fr);
       align-self: center;
-      margin: 1rem 4rem 1rem 3rem;
+      margin: 1rem 3rem 1rem 2rem;
     }
 
      .span-2 {
