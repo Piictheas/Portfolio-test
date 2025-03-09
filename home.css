@@ -145,10 +145,10 @@ body{
       
 
       /*small small screen*/
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 820px) {
     h1{
       font-size: 500%;
-      padding: 9rem 2rem 1rem 2rem;
+      padding: 7rem 2rem 1rem 2rem;
     }
 
     h2{
