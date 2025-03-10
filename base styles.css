@@ -128,7 +128,7 @@ h2{
   left: 0;
   background-color: #ff8303;
   overflow-x: hidden;
-  padding: 1rem;
+  padding: 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between; /* Ensure space between items */
@@ -147,7 +147,7 @@ h2{
 }
 
 .sidenav-arrow ul li {
-  margin: 2rem 0; /* Add spacing between list items */
+  margin: 1.6rem 0; /* Add spacing between list items */
   padding: 1rem;
 }
 
