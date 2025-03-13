@@ -125,6 +125,11 @@ body{
 
 /* small screem */
 @media screen and (max-width: 1080px) {
+
+  .about-section {
+    margin-top: 2rem;
+  }
+
   .about-text h1 {
     font-size: 25px;
   }
@@ -149,7 +154,7 @@ body{
   .about-section {
     flex-direction: column; /* Change flex direction to column */
     align-items: center; /* Center align items */
-    margin-top: 5rem;
+    margin-top: 2rem;
   }
 
   .profile-img {

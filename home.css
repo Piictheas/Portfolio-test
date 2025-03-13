@@ -142,13 +142,30 @@ body{
       .socials-footer a:hover{
         color: #97350f;
       }
+
+
+      /*small screen*/
+      @media screen and (max-width: 1080px) {
+
+        h1{
+          font-size: 500%;
+          padding: 3rem 2rem 1rem 2rem;
+        }
+    s
+        h2{
+          font-size: 190%;
+        }
+    
+
+      }
+      
       
 
       /*small small screen*/
 @media screen and (max-width: 820px) {
     h1{
-      font-size: 500%;
-      padding: 7rem 2rem 1rem 2rem;
+      font-size: 400%;
+      padding: 5rem 2rem 1rem 2rem;
     }
 
     h2{
