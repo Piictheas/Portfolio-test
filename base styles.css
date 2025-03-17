@@ -234,7 +234,7 @@ h2{
 
 
 /* mid screen */
-@media screen and (max-width: 1080px) {
+@media screen and (max-height: 780px) {
   h1{
     font-size: 50px;
     letter-spacing: 4px;

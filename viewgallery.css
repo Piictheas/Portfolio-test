@@ -87,7 +87,7 @@
 
 
 /* Hide lightbox on mobile devices */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 820px) {
 
     .lightbox-content {
         width: 100%;
