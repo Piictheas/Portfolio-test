@@ -23,8 +23,8 @@
     height: 100%;
     overflow: hidden;
     object-fit: cover;
-    /* vertical-align: middle;
-    display: inline-block; */
+    vertical-align: middle;
+    display: inline-block;
   }
   
   .box-long img {
@@ -32,6 +32,8 @@
     height: 100%;
     overflow: hidden;
     object-fit: cover;
+    vertical-align: middle;
+    display: inline-block;
   }
   
   .box-long-long img {
@@ -39,10 +41,12 @@
     height: 100%;
     overflow: hidden;
     object-fit: cover;
+    vertical-align: middle;
+    display: inline-block;
   }
   
   .image1{
-      align-self: center;
+    align-self: center;
   }
   
   .image2{
@@ -50,7 +54,7 @@
   }
   
   .image3{
-  align-self: center;
+    align-self: center;
   }
 
   .span-2 {
@@ -59,7 +63,7 @@
   
   .box {
     display: grid;
-    grid-template-columns: repeat(4, minmax(150px, 1fr));
+    grid-template-columns: repeat(4, minmax(2rem, 1fr));
     grid-gap: 1rem;
     margin: 1rem 4rem 1rem 3rem;
     position: relative;
@@ -67,7 +71,7 @@
   
   .box-long {
     display: grid;
-    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    grid-template-columns: repeat(3, minmax(2rem, 1fr));
     grid-gap: 1rem;
     margin: 1rem 4rem 1rem 3rem;
     position: relative;
@@ -75,7 +79,7 @@
   
   .box-long-long {
     display: grid;
-    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    grid-template-columns: repeat(2, minmax(2rem, 1fr));
     grid-gap: 1rem;
     margin: 1rem 4rem 1rem 3rem;
     position: relative;
@@ -87,77 +91,127 @@
       grid-template-columns: repeat(2, 1fr);
       align-self: center;
       margin: 1rem 3rem 1rem 2rem;
+      position: relative;
     }
 
     .box-long{
       grid-template-columns: repeat(2, 1fr);
       align-self: center;
       margin: 1rem 3rem 1rem 2rem;
+      position: relative;
     }
 
     .box-long-long{
-      grid-template-columns: repeat(1, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       align-self: center;
       margin: 1rem 3rem 1rem 2rem;
+      position: relative;
     }
 
      .span-2 {
       grid-column: span 1;
     }
 
+    /* .image1{
+      grid-column-start: 1;
+      grid-column-end: 3;
+    } */
+
     .image2{
       grid-column-start: 1;
-      grid-column-end: 1;
-    }
-
-    .image4{
-      grid-column-start: 3;
       grid-column-end: 3;
     }
+
+    /* .image4{
+      grid-column-start: 1;
+      grid-column-end: 3;
+    } */
 
     .image3{
       grid-column-start: 1;
       grid-column-end: 3;
     }
 }
-
-/*small small screen*/
-@media screen and (max-width: 820px) {
+@media screen and (max-height: 1080) {
   .box{
-    grid-template-columns: 100%;
-    margin: 1rem 1rem 1rem 1rem;
-    grid-gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    align-self: center;
+    margin: 1rem 3rem 1rem 2rem;
+    position: relative;
   }
 
   .box-long{
-    margin: 1rem 1rem 1rem 1rem;
-    grid-gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    align-self: center;
+    margin: 1rem 3rem 1rem 2rem;
+    position: relative;
   }
 
   .box-long-long{
-    margin: 1rem 1rem 1rem 1rem;
-    grid-gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    align-self: center;
+    margin: 1rem 3rem 1rem 2rem;
+    position: relative;
+  }
+
+   .span-2 {
+    grid-column: span 1;
+  }
+
+  .image2{
+    grid-column-start: 1;
+    grid-column-end: 3;
   }
 
   .image3{
     grid-column-start: 1;
     grid-column-end: 3;
   }
+}
 
-  /* .image1{
+/*small small screen*/
+@media screen and (max-width: 850px){
+  .box{
+    grid-template-columns: 100%;
+    margin: 1rem 1rem 1rem 1rem;
+    grid-gap: 1rem;
+    position: relative;
+  }
+
+  .box-long{
+    grid-template-columns: 100%;
+    margin: 1rem 1rem 1rem 1rem;
+    grid-gap: 1rem;
+    position: relative;
+  }
+
+  .box-long-long{
+    grid-template-columns: 100%;
+    margin: 1rem 1rem 1rem 1rem;
+    grid-gap: 1rem;
+    position: relative;
+  }
+
+  .image3{
+    grid-template-columns: 100%;
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 1;
+  }
+
+  .image1{
+    grid-template-columns: 100%;
   }
 
   .image2{
-    grid-column-start: 1;
-    grid-column-end: 3;
-  } */
+    grid-template-columns: 100%;
+  }
 
-  img:hover{
-    transform: none
+  .span-2 {
+    grid-column: span 1;
+  }
+
 }
-}
+
 
 /*large screen*/
 /* @media screen and (min-width: 1000px){
